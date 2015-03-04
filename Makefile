@@ -4,7 +4,7 @@ all: bp
 
 bp: bp.pdf
 
-bp.pdf: index.tex
+bp.pdf: index.tex chapters/intro.tex chapters/chapter1.tex chapters/chapter2.tex chapters/chapter3.tex chapters/chapter4.tex index.bib
 	pdflatex -interaction=nonstopmode -synctex=1 index.tex
 	bibtex index.aux
 	pdflatex -interaction=nonstopmode -synctex=1 index.tex
